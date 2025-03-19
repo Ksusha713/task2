@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Winky Sans", sans-serif;
+    font-family: "Patrick Hand", sans-serif;
 }
 
 header {
@@ -27,28 +27,168 @@ header {
 }
 
 h1 {
+    font-family: "Lobster";
+    background-color: rgba(255, 255, 255, 0.274);
     letter-spacing: 4px;
     font-size: 60px;
-    margin: 0;
 }
 
 h2 {
+    background-color: rgba(255, 255, 255, 0.274);
+    height: 60px;
     font-size: 40px;
     font-family: "Dancing Script";
+}
+
+main {
+    margin: 20px 20px;
+}
+
+a {
+    display: inline-block; 
+    transition: 0.25s;
+}
+
+.special-link {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(6, 1, 96) 0%, rgba(9,9,121,1) 27%, rgba(24,153,180,1) 78%, rgba(37,177,113,1) 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.special-link:hover {
+    transform: scale(1.03);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.grid-box{
+    background-color: rgba(243, 218, 239, 0.164);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.grid h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50px; 
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+}
+
+.grid ul, ol {
+    font-size: 20px;
+    text-align: left; 
+    align-self: flex-start; 
+    padding-left: 30px;
+}
+.grid ul {
+    list-style: circle;
+}
+.grid li  {
+    padding-bottom: 5px;
 }
 
 footer {
     height: 50px;
     width: 100%;
     margin-top: 20px;
-    background-color: rgb(243, 218, 239);
+    background-color: rgba(243, 218, 239, 0.164);
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    text-align: center; /* Centers text inside */
+    justify-content: space-evenly;
+    align-items: center; 
+    text-align: center; 
 }
 
 footer p {
+    font-family: "Lobster";
     font-size: 20px;
     letter-spacing: 3px;
 }
+
+/* ICONS FROM https://prismic.io/blog/css-hover-effects number 16 */
+
+footer ul {
+    display: flex;
+    position: relative;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  
+footer ul li {
+    list-style: none;
+  }
+  
+footer  ul li a {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+footer  ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+footer  ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+footer  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+footer  ul li a:hover:before {
+    top: 0;
+  }
+  
+footer  ul li:nth-child(1) a:before{
+    background: #3b59998f;
+  }
+  
+footer  ul li:nth-child(2) a:before{
+    background: #8c21be82;
+  }
+  
+footer  ul li:nth-child(3) a:before {
+    background: #e9050581;
+  }
+  
+footer  ul li:nth-child(4) a:before {
+    background: #dd4c397a;
+  }
