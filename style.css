@@ -1,9 +1,8 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     font-family: "Winky Sans", sans-serif;
 }
 
@@ -12,8 +11,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +35,20 @@ h1 {
 h2 {
     font-size: 40px;
     font-family: "Dancing Script";
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(243, 218, 239);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers text inside */
+}
+
+footer p {
+    font-size: 20px;
+    letter-spacing: 3px;
 }
