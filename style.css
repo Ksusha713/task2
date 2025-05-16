@@ -21,7 +21,7 @@ header {
 }
 
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -91,6 +91,40 @@ h2 {
 .letter {
     opacity: 0;
     display: inline-block;
+}
+
+/* GO UP BUTTON */
+.go-up {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 9999; 
+}
+
+.go-up button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Dancing script";
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  padding: 0;
+}
+
+.go-up button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.go-up button svg {
+  display: block;
 }
 
 main {
@@ -275,10 +309,31 @@ a {
     background: linear-gradient(90deg, rgb(6, 1, 96) 0%, rgba(9,9,121,1) 27%, rgba(24,153,180,1) 78%, rgba(37,177,113,1) 100%);
     cursor: pointer;
     outline: none;
+    z-index: 2;
 }
 
 .tour-price-btn button:hover {
     opacity: 0.6;
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.reindeer {
+    position: absolute;
+    bottom: 51px;
+    left: 40%;
+    transform: translate(-50%, 100%);
+    width: 100px;
+    transition: transform 0.5s ease;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.button-container:hover .reindeer {
+    transform: translate(-50%, 8%);
 }
 
 /* FOOTER */

@@ -11,13 +11,20 @@ anime.timeline()
     targets: '.animation .letter',
     opacity: [0, 1],
     easing: "easeInOutQuad",
-    duration: 600,
-    delay: (el, i) => 150 * i
+    duration: 300,
+    delay: (el, i) => 50 * i
 })
 .add({
     targets: '.animation2 .letter',
     opacity: [0, 1],
     easing: "easeInOutQuad",
-    duration: 600,
-    delay: (el, i) => 150 * i
+    duration: 300,
+    delay: (el, i) => 50 * i
+});
+
+
+const goUpBtn = document.getElementById('goUpBtn');
+
+goUpBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
