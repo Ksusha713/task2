@@ -23,6 +23,7 @@ anime.timeline()
 });
 
 
+//GO UP BUTTON ANIMATION
 const goUpBtn = document.getElementById('goUpBtn');
 
 goUpBtn.addEventListener('click', () => {
