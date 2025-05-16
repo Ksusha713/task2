@@ -1,0 +1,19 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<link href="css/main.css" rel="stylesheet" media="screen">
+<title>M11 Tr&auml;gheitsmomente aus Drehschwingungen, Teil 2 (dynamische Methode mit Vollzylinder)</title>
+<meta name="description" content="Drehschwingungen,Tr&auml;gheitsmoment,Winkelrichtgroesse,dynamische Methode">
+<meta name="keywords" content="Drehschwingungen,Tr&auml;gheitsmoment,Winkelrichtgroesse,dynamische Methode,Vollzylinder,physikalisches Praktikum,Berechnung,Formular">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body background="img/stone.jpg">
+
+<script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
+<script type='text/javascript' src='js/rambo.js'></script>
+<br><a href=praktikumshelfer.html#M11_3>Hauptmen&uuml;</a><br><hr><h2><font color=purple>M11 &nbsp; Tr&auml;gheitsmomente aus Drehschwingungen</font></h2><h3>Aufgabenstellung 1.2 &nbsp; (dynamische Methode mit Zylinder)</h3><form name='form' method='post' action='M11_3.php'><table cellpadding=0 cellspacing=10><tr><td><input type='submit' name='expl' value='Grundlagen/Hinweise einblenden' style='background-color:#fffacd'></td><tr></tr><tr><td><font color=purple><b>Abst&auml;nde <i>s</i></b> und gemessene <b>Schwingungsdauern <i>T</i></b>:</font></td><tr><td valign=top><textarea name='sT' cols=60 rows=12 style='background:#c8d8ff'></textarea></td><td valign=top>Gib in nebenstehendes Formular die Ma&szlig;zahlen von <i>s</i> (<font color=#1111bb>in <b>mm</b></font>) und <i>T</i> (<font color=#1111bb>in <b>s</b></font>) blockweise (z.B. zeilenweise) ein. Als Block z&auml;hlt dabei ein Wert f&uuml;r <i>s</i> und ein bis vier Werte f&uuml;r <i>T</i>. <font color=red>Wichtig:</font> Trenne die Bl&ouml;cke mit einem abschlie&szlig;enden Semikolon. Als Trennzeichen innerhalb eines Blocks k&ouml;nnen "white spaces" (Leerzeichen, Tabulatoren, Zeilenumbr&uuml;che) benutzt werden. Die auf Taschenrechnern &uuml;bliche Exponentialschreibweise wie z. B. "1.23e-4" ist erlaubt.</td><tr><td><font color=purple><b>Masse <i>m</i></b> des Zylinders:</font></td><tr><td valign=top><input name='mcyl' size=40 valign=top style='background:#c8d8ff'></td><td valign=top>Gib hier die Masse <i>m</i> (<font color=#1111bb>in <b>g</b></font>) des aufgesetzten Zylinders an.</td><tr><td><font color=purple>Gemessene <b>Schwingungsdauern <i>T</i><sub>0</sub></b> ohne Zylinder:</font></td><tr><td valign=top><input name='T0' size=40 valign=top style='background:#c8d8ff'></td><td valign=top>Optional k&ouml;nnen hier bis zu vier Schwingungsdauern (<font color=#1111bb>in <b>s</b></font>) der Schwingplatte ohne aufgesetzten Zylinder angegeben werden, um <i>J<sub>0</sub></i> und <i>J<sub>S</sub></i> einzeln zu ermitteln. Wenn das Feld leer bleibt, erfolgt keine Ermittlung der einzelnen Tr&auml;gheitsmomente.<br>Gib dazu die Ma&szlig;zahlen von <i>T</i><sub>0</sub> fortlaufend ein. Als Trennzeichen k&ouml;nnen "white spaces" (Leerzeichen, Tabulatoren, Zeilenumbr&uuml;che) benutzt werden. Die auf Taschenrechnern &uuml;bliche Exponentialschreibweise wie z. B. "1.23e-4" ist erlaubt.</td><tr><td><input type='submit' name='submitted' value='Abschicken' style='background-color:#fffacd'> &nbsp;&nbsp;<input type='reset' name='resetted' value='R&uuml;cksetzen' style='background-color:#fffacd'></td></table></form><hr><br /><div class="footer"><a href="https://www.ovgu.de/datenschutzerklaerung.html" target="_blank"><strong>Datenschutzerkl&auml;rung der Otto-von-Guericke-Universit&auml;t Magdeburg nach DSGVO</strong></a><br /><br /></div><small>Gl&uuml;ckwunschkarten, Blumen, Geldspenden oder Kritik erbeten an: &nbsp; <a href="mailto:eckard.specht@physik.uni-magdeburg.de"><i>E. Specht</i></a> &nbsp;&nbsp; 02.05.2025 19:02:12<br>
+</body>
+</html>
