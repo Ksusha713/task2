@@ -136,6 +136,27 @@ a {
     transition: 0.25s;
 }
 
+.animate-up .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveUpFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid-box .letter {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(20px);
+}
+
 .special-link {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(6, 1, 96) 0%, rgba(9,9,121,1) 27%, rgba(24,153,180,1) 78%, rgba(37,177,113,1) 100%);
@@ -341,7 +362,13 @@ footer {
     height: 50px;
     width: 100%;
     margin-top: 20px;
-    background-color: rgba(243, 218, 239, 0.164);
+    background: linear-gradient(
+        90deg, 
+        rgba(6, 1, 96, 0.3) 0%, 
+        rgba(9, 9, 121, 0.3) 27%, 
+        rgba(24, 153, 180, 0.3) 78%, 
+        rgba(37, 177, 113, 0.3) 100%
+    );
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
@@ -413,17 +440,21 @@ footer  ul li a:hover:before {
   }
   
 footer  ul li:nth-child(1) a:before{
-    background: #3b59998f;
+    background: #4b80f1b4;
   }
   
 footer  ul li:nth-child(2) a:before{
-    background: #8c21be82;
+    background: #a71ce782;
   }
   
 footer  ul li:nth-child(3) a:before {
-    background: #e9050581;
+    background: #fa040481;
   }
   
 footer  ul li:nth-child(4) a:before {
-    background: #dd4c397a;
+    background: #f80b0b7a;
   }
+
+footer #deer {
+    padding-left: 90px;
+}
